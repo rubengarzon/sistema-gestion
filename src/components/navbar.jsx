@@ -1,7 +1,7 @@
 import "../App.css";
 function Navbar() {
   return (
-    <div>
+    <div className="navbar">
       <ul>
         <li className="navbar-li">
           <a href="/clientes">Clientes</a>

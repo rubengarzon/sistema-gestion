@@ -2,9 +2,20 @@
   text-align: center;
 }
 
+.navbar {
+  background-color: #111827;
+  width: 260px px;
+  height: 100%;
+  position: absolute;
+}
+
 .navbar-li {
   display: flex;
   flex-direction: column;
+}
+
+.navbar-li a {
+  text-decoration: none;
 }
 
 .App-logo {
