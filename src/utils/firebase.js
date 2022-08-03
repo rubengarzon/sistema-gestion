@@ -54,3 +54,14 @@ export async function query(coleccionABuscar) {
   });
   return listado;
 }
+
+export function isLogged() {
+  const auth = getAuth();
+  const user = auth.currentUser;
+
+  if (user) {
+    return true;
+  } else {
+    return false;
+  }
+}

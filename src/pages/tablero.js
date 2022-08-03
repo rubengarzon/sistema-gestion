@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 function Tablero() {
   return (
     <div>
-      <h1>Tablero</h1>
+      <h1 className="tablero-titulo">Tablero</h1>
       <Navbar />
     </div>
   );
