@@ -3,6 +3,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signOut,
 } from "firebase/auth";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
@@ -64,4 +65,15 @@ export function isLogged() {
   } else {
     return false;
   }
+}
+
+export function logout() {
+  const auth = getAuth();
+  signOut(auth)
+    .then(() => {
+      alert("¡Has cerrado sesión!");
+    })
+    .catch((error) => {
+      // An error happened.
+    });
 }

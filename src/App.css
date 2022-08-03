@@ -7,7 +7,45 @@
 }
 
 .clientes-div {
+  margin: 0px 0px 0px 19em;
+}
+
+.container-div {
+  display: flex;
+}
+
+.container-tablero {
+  display: flex;
+}
+
+.container-products {
+  display: flex;
+}
+
+.cards {
+  margin: 100px 0px 0px 299px;
+}
+
+.card {
+  width: 381px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   text-align: center;
+}
+
+.card p {
+  padding: 1em;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.link-active {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 13em;
+  height: 2em;
+  border-radius: 4px;
 }
 
 .navbar {
@@ -23,15 +61,27 @@
   margin: 0px 0px 10px 0px;
 }
 
-.navbar-li a {
-  color: gray;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: larger;
+.navbar-li:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 13em;
+  height: 2em;
+  border-radius: 4px;
 }
 
-.navbar-li a:hover {
+.navbar-li a {
   color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar-li div {
+  height: 2em;
+}
+
+.navbar-li div img {
+  margin-right: 7px;
+  margin-left: 14px;
 }
 
 .App-logo {
