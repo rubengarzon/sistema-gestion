@@ -19,16 +19,21 @@ function Productos() {
     <>
       <div className="container-products">
         <Navbar />
-        <div className="cards">
-          {productos.map((producto) => (
-            <>
-              <div className="card">
-                <img src={producto.icono} alt="" width="50"></img>
-                <h3>{producto.nombre}</h3>
-                <p>{producto.descripcion}</p>
-              </div>
-            </>
-          ))}
+        <div className="flex-column">
+          <div>
+            <h2>Productos</h2>
+          </div>
+          <div className="cards">
+            {productos.map((producto) => (
+              <>
+                <div className="card">
+                  <img src={producto.icono} alt="" width="50"></img>
+                  <h3>{producto.nombre}</h3>
+                  <p>{producto.descripcion}</p>
+                </div>
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </>
