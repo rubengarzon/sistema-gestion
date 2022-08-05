@@ -5,7 +5,14 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import { collection, getDocs, getFirestore } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  setDoc,
+  doc,
+} from "firebase/firestore";
+import AddCustomer from "../pages/AddCustomer";
 
 export function firebaseConfig() {
   const config = {
@@ -76,4 +83,20 @@ export function logout() {
     .catch((error) => {
       // An error happened.
     });
+}
+
+export async function AddNewCustomer(customer) {
+  console.log(customer);
+
+  let f = new Date();
+  let fechaActual = f.getDate() + "-" + f.getMonth() + "-" + f.getFullYear();
+
+  return await setDoc(doc(getFirestore(), "clientes", "Prueba"), {
+    nombre: customer.nombre,
+    apellido: customer.apellido,
+    email: customer.email,
+    movil: customer.movil,
+    localizacion: customer.localizacion,
+    fecha: fechaActual,
+  });
 }

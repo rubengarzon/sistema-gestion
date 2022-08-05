@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Tablero from "./pages/tablero";
-import IniciarSesion from "./pages/iniciarsesion";
-import Productos from "./pages/productos";
-import Clientes from "./pages/clientes";
+import Tablero from "./pages/Tablero";
+import IniciarSesion from "./pages/IniciarSesion";
+import Productos from "./pages/Productos";
+import Clientes from "./pages/Clientes";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

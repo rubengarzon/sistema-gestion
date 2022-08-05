@@ -20,20 +20,15 @@ function Productos() {
       <div className="container-products">
         <Navbar />
         <div className="cards">
-          <div className="card">
-            {productos.map((producto) => (
-              <>
-                <img
-                  key={producto.icono}
-                  src={producto.icono}
-                  alt=""
-                  width="50"
-                />
-                <h2 key={producto.nombre}>{producto.nombre}</h2>
-                <p key={producto.descripcion}>{producto.descripcion}</p>
-              </>
-            ))}
-          </div>
+          {productos.map((producto) => (
+            <>
+              <div className="card">
+                <img src={producto.icono} alt="" width="50"></img>
+                <h3>{producto.nombre}</h3>
+                <p>{producto.descripcion}</p>
+              </div>
+            </>
+          ))}
         </div>
       </div>
     </>

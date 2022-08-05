@@ -17,8 +17,8 @@ function Navbar() {
     <div className="navbar">
       <ul>
         <li className="navbar-li">
-          <div className={currentPage === "/tablero" ? "link-active" : ""}>
-            <a href="/tablero">
+          <div className={currentPage === "/" ? "link-active" : ""}>
+            <a href="/">
               <img
                 src="https://www.nicepng.com/png/full/800-8005038_login-dashboard-icon-white-png.png"
                 alt=""
@@ -44,7 +44,7 @@ function Navbar() {
           <div className={currentPage === "/productos" ? "link-active" : ""}>
             <a href="/productos">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRci4mPCD3TI3d_IB7QfnaWJUtLuLsPvkX1wA&usqp=CAU"
+                src="https://www.ubolosoft.com/Carrito/images/carrito.png"
                 alt=""
                 width="20"
               ></img>

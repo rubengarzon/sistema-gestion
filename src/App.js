@@ -1,8 +1,9 @@
 import "./App.css";
-import Tablero from "./pages/tablero";
-import Clientes from "./pages/clientes";
-import Productos from "./pages/productos";
-import IniciarSesion from "./pages/iniciarsesion";
+import Tablero from "./pages/Tablero";
+import Clientes from "./pages/Clientes";
+import Productos from "./pages/Productos";
+import IniciarSesion from "./pages/IniciarSesion";
+import AddCustomer from "./pages/AddCustomer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { firebaseConfig } from "./utils/firebase";
 
@@ -12,10 +13,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/tablero" element={<Tablero />} />
+        <Route exact path="/" element={<Tablero />} />
         <Route exact path="/clientes" element={<Clientes />} />
         <Route exact path="/productos" element={<Productos />} />
         <Route exact path="/iniciarsesion" element={<IniciarSesion />} />
+        <Route exact path="/addcustomer" element={<AddCustomer />} />
       </Routes>
     </BrowserRouter>
   );
