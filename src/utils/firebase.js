@@ -63,6 +63,12 @@ export async function query(coleccionABuscar) {
   return listado;
 }
 
+export async function cambiarPresupuesto(ajustes) {
+  return await setDoc(doc(getFirestore(), "ajustes", "SxRQNblBn2ePZhkR90gT"), {
+    presupuesto: ajustes.presupuesto[0],
+  });
+}
+
 export function isLogged() {
   const auth = getAuth();
   const user = auth.currentUser;
@@ -86,8 +92,6 @@ export function logout() {
 }
 
 export async function AddNewCustomer(customer) {
-  console.log(customer);
-
   let f = new Date();
   let fechaActual = f.getDate() + "-" + f.getMonth() + "-" + f.getFullYear();
 
